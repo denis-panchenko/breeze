@@ -612,8 +612,11 @@ header {
   background-position: center;
   height: 45px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 .tel{
   display: flex;
@@ -621,8 +624,25 @@ header {
 }
 .tel__link{
   font-family: "Segoe UI";
-  font-size: 11px;
+  font-size: 15px;
+  font-weight: 400;
   color: #444444;
   text-decoration: none;
   margin-left: 5px;
+}
+.registration{
+  font-family: "BitterRegular";
+  font-size: 16px;
+  font-weight: 400;
+}
+.registration__submit{ 
+border:none; 
+padding:0; 
+margin:0; 
+font-size:16px; 
+color: #63bbc6; 
+background-color:transparent; 
+}
+.lang{
+  display: flex;
 }
