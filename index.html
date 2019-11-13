@@ -9,8 +9,8 @@
 </head>
 <body>
 	<header>
-		<section class="fw-container">
-			<div class="wrapper">
+		<div class="header__topline">
+			<div class="fw-container fw-justify-content-between">
 				<div class="tel">
 					<img class="tel__img" src="img/icon phone.png">
 					<a class="tel__link" href="tel:+777 (100) 1234" rel="nofollow noopener norefferer">Call Us +777 (100) 1234</a>
@@ -29,11 +29,53 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>	
+		<div class="header__bottomline">
+			<div class="fw-container fw-justify-content-between">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.png"></a>
+				</div>
+				<div class="header-search">
+					<div class="header-search__input">
+						<input type="search" id="search" placeholder="Search entire store here...">
+      					<button></button>
+					</div>
+				</div>
+				<div class="header-user-buttons fw-flex">
+					<ul class="header-actions">
+						<li class="header-actions__item">My account</li>
+						<li class="header-actions__item">My wishlist</li>
+						<li class="header-actions__item">Log In</li>
+						<li class="header-actions__item">Sign Up</li>
+					</ul>
+					<div class="cart">
+						<img class="cart__img" src="img/icon cart.png">Cart &#36 0.00
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 	<main>
 		<section class="fw-container">
-			
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item current"><a class="nav__links__active" href="#">Home</a></li>
+					<li class="nav__item"><a class="nav__links" href="#">Solids</a></li>
+					<li class="nav__item"><a class="nav__links" href="#">Liquids</a></li>
+					<li class="nav__item"><a class="nav__links" href="#">Spray</a></li>
+					<li class="nav__item"><a class="nav__links" href="#">Electric</a></li>
+					<li class="nav__item"><a class="nav__links" href="#">For cars</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="fw-container">
+			<div class="slider">
+				<div class="slide">
+					<div class="slide__bg"></div>
+					<div class="slide__product"></div>
+					<div class="slide__text"></div>
+				</div>
+			</div>
 		</section>
 	</main>
 </body>

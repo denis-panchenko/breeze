@@ -606,10 +606,15 @@ img {max-width: 100%;
   }
 }
 /*header*/
-header{
+.fw-justify-content-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__topline{
   background-color: #f5f7f9;
 }
-header::before{
+.header__topline::before{
   content: '';
   display: block;
   height: 9px;
@@ -618,11 +623,6 @@ header::before{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .tel{
   display: flex;
@@ -640,6 +640,10 @@ header::before{
   font-family: "BitterRegular";
   font-size: 12px;
   font-weight: 400;
+  opacity: 0.7;
+}
+.registration:hover{
+  opacity: 1;
 }
 .registration__submit{ 
   border:none; 
@@ -671,4 +675,83 @@ header::before{
 .current{
   background-color: #78c4cd;
   color: #fff;
+}
+.lang__item:hover, .currency__item:hover{
+  background-color: #d5e4f1;
+}
+.header__bottomline{
+  padding: 50px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header-search__input input{
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  font-weight: 400;
+  padding: 15px;
+  width: 230px;
+}
+.header-actions{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-actions__item{
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+  padding: 0px 15px;
+}
+.header-actions__item:nth-child(-n+3){
+  border-right: 1px solid;
+}
+.cart{
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+  background-color: #f1f3f5;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.cart__img{
+  margin-right: 7px;
+}
+/*menu*/
+.nav{
+  background-color: #f5f7f9;
+  margin-bottom: 20px;
+}
+.nav__list{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nav__item{
+  font-family: 'Bitter';
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px;
+
+}
+.nav__links{
+  text-decoration: none;
+  color: #737474;
+}
+.nav__links__active{
+  color: #fff;
+  text-decoration: none;
+}
+/*slider*/
+.slide__bg{
+  background-image: url(../img/slide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 480px;
 }
