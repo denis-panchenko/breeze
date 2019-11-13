@@ -7,6 +7,48 @@
 img {max-width: 100%;
 }
 
+/*fonts*/
+@font-face {
+  font-family: "BitterRegular";
+  src: url("../fonts/BitterRegular/BitterRegular.eot");
+  src: url("../fonts/BitterRegular/BitterRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/BitterRegular/BitterRegular.woff") format("woff"),
+  url("../fonts/BitterRegular/BitterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BitterBold";
+  src: url("../fonts/BitterBold/BitterBold.eot");
+  src: url("../fonts/BitterBold/BitterBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/BitterBold/BitterBold.woff") format("woff"),
+  url("../fonts/BitterBold/BitterBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+  url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+  url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*grid*/
 .fw-container {
   width: 100%;
   padding-right: calc((100% - 984px) / 2);
@@ -563,9 +605,24 @@ img {max-width: 100%;
     max-width: calc((100% / 12) * 12);
   }
 }
-header{
+header {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel{
+  display: flex;
+  align-items: center;
+}
+.tel__link{
+  font-family: "Segoe UI";
+  font-size: 11px;
+  color: #444444;
+  text-decoration: none;
+  margin-left: 5px;
 }
