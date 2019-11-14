@@ -629,7 +629,7 @@ img {max-width: 100%;
   align-items: center;
 }
 .tel__link{
-  font-family: "Segoe UI";
+  font-family: "SegoeUIRegular";
   font-size: 11px;
   font-weight: 400;
   color: #444444;
@@ -668,7 +668,7 @@ img {max-width: 100%;
   background-color: #e6e9ed;
   padding: 15px 10px;
   border-right: 1px solid #f5f7f9;
-  font-family: 'Segoe UI';
+  font-family: 'SegoeUIRegular';
   font-weight: 700;
   font-size: 11px;
 }
@@ -684,7 +684,7 @@ img {max-width: 100%;
   border-bottom: 1px solid #e0e0e0;
 }
 .header-search__input input{
-  font-family: 'Segoe UI';
+  font-family: 'SegoeUIRegular';
   font-size: 12px;
   font-weight: 400;
   padding: 15px;
@@ -696,7 +696,7 @@ img {max-width: 100%;
   list-style: none;
 }
 .header-actions__item{
-  font-family: 'Segoe UI';
+  font-family: 'SegoeUIRegular';
   font-size: 12px;
   font-weight: 400;
   color: #777777;
@@ -706,7 +706,7 @@ img {max-width: 100%;
   border-right: 1px solid;
 }
 .cart{
-  font-family: 'Segoe UI';
+  font-family: 'SegoeUIRegular';
   font-size: 12px;
   font-weight: 400;
   color: #777777;
@@ -721,7 +721,6 @@ img {max-width: 100%;
 /*menu*/
 .nav{
   background-color: #f5f7f9;
-  margin-bottom: 20px;
 }
 .nav__list{
   list-style: none;
@@ -732,26 +731,70 @@ img {max-width: 100%;
   margin: 0;
 }
 .nav__item{
-  font-family: 'Bitter';
+  font-family: 'BitterRegular';
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   padding: 20px;
-
+  transition: background linear .2s;
+}
+.nav__item:hover{
+  background-color: #78c4cd;
+}
+.nav__item:hover .nav__links{
+  color: #fff;
 }
 .nav__links{
   text-decoration: none;
   color: #737474;
+  transition: color linear .2s, background-color linear 5s;
 }
 .nav__links__active{
   color: #fff;
   text-decoration: none;
 }
+.nav__links:hover{
+  background-color: #78c4cd;
+  color: #fff;
+  text-decoration: none;
+}
 /*slider*/
+.slider{
+  margin: 20px 0;
+}
 .slide__bg{
   background-image: url(../img/slide.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 480px;
+  position: relative;
+}
+.slide__product{
+  position: absolute;
+  top: 60px;
+  left: 420px;
+  z-index: 3;
+}
+.slide__text{
+  position: absolute;
+  top: 40px;
+  right: 550px;
+}
+h1{
+  font-family: 'BitterRegular';
+  font-size: 36px;
+  font-weight: 400;
+}
+.slide__text-about{
+  font-family: 'BitterRegular';
+  font-size: 16px;
+  font-weight: 400;
+}
+/*banners*/
+.banners{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  margin: 0 15px;
 }
