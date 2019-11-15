@@ -890,3 +890,73 @@ h2{
 .pb-30{
   padding-bottom: 30px;
 }
+
+/*pop-up*/
+
+.container-pop-up{
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 87, 87, 0.7);
+}
+.pop-up{
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  position: relative;
+  top: calc((100% - 400px) / 2);
+  left: calc((100% - 500px) / 2);
+}
+.form-pop-up{
+  padding: 60px;
+}
+.form-pop-up__title{
+  font-family: 'BitterBold';
+  font-size: 36px;
+  color: #78c4cd;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-pop-up__text{
+  width: 100%;
+  font-family: 'SegoeUIRegular';
+  font-size: 15px;
+  padding: 10px;
+  background-color: #78c4cd;
+  color: #fff;
+  border: 3px solid #69adb5;
+  outline: none;
+  margin: 10px 0;
+}
+.btn{
+  background-color: #78c4cd;
+  box-shadow: none;
+  border: 3px solid #69adb5;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  font-family: 'SegoeUIRegular';
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.form-pop-up__text::placeholder{
+  color: #fff;
+  text-align: center;
+  font-family: 'SegoeUIRegular';
+  font-size: 15px;
+}
+.escape{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

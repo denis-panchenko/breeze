@@ -47,8 +47,8 @@
 					<ul class="header-actions">
 						<li class="header-actions__item"><a class="header-actions__link" href="#">My account</a></li>
 						<li class="header-actions__item"><a class="header-actions__link" href="#">My wishlist</a></li>
-						<li class="header-actions__item"><a class="header-actions__link" href="#">Log In</a></li>
-						<li class="header-actions__item"><a class="header-actions__link" href="#">Sign Up</a></li>
+						<li class="header-actions__item"><a class="header-actions__link login" href="#">Log In</a></li>
+						<li class="header-actions__item"><a class="header-actions__link login" href="#">Sign Up</a></li>
 					</ul>
 					<div class="cart">
 						<a class="cart__link" href="#"><img class="cart__img" src="img/icon cart.png">Cart &#36 0.00</a>
@@ -117,6 +117,19 @@
 			</div>
 		</section>
 	</main>
+	<!-- Pop up -->
+
+	<div class="container-pop-up">
+		<div class="pop-up">
+			<form class="form-pop-up">
+				<div class="form-pop-up__title">Log In/Registration</div>
+				<input class="form-pop-up__text" type="text" name="name" placeholder="E-mail">
+				<input class="form-pop-up__text" type="password" name="password" placeholder="Enter your password">
+				<button class="form-pop-up__text btn" type="submit">Login/Registration</button>
+				<div class="escape"><a class="escape__link" href="#"><img src="img/error.png"></a></div>
+			</form>
+		</div>
+	</div>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

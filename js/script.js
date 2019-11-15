@@ -1,14 +1,30 @@
-$(document).ready (function () {
-	$('.lang__link').click (function(e) {
+var $currencyLink = $('.currency__link');
+  var $langLink = $('.lang__link');
+
+  $currencyLink.on( 'click', function(e) {
+    e.preventDefault();
+    setActiveItem( $('.active'), $(this), 'active');
+  });
+
+  $langLink.on( 'click', function(e) {
+    e.preventDefault();
+    setActiveItem( $('.current'), $(this), 'current');
+  });
+
+  function setActiveItem(oldElem, newElem, currentClass) {
+    oldElem.removeClass(currentClass);
+    newElem.addClass(currentClass);
+  }
+
+$(function () {
+	$('.login').on('click', function(e) {
 	  	e.preventDefault();
-	 	$('.current').removeClass('current');
-	  	$(this).addClass('current');
+	 	$('.container-pop-up').css('display', 'block');
  	});
- })
-$(document).ready (function () {
-	$('.currency__link').click (function(e) {
+})
+$(function () {
+	$('.container-pop-up').on('click', function(e) {
 	  	e.preventDefault();
-	 	$('.active').removeClass('active');
-	  	$(this).addClass('active');
+	 	$('.container-pop-up').css('display', 'none');
  	});
- })
+})
