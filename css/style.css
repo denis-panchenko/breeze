@@ -659,11 +659,13 @@ img {max-width: 100%;
   display: block;
   text-decoration: none;
   padding: 15px 10px;
+  color: #444444;
 }
 .currency__link{
   display: block;
   text-decoration: none;
   padding: 15px 10px;
+  color: #444444;
 }
 .lang__link:hover, .currency__link:hover{
   background-color: #d5e4f1;
@@ -681,11 +683,10 @@ img {max-width: 100%;
   display: block;
   cursor: pointer;
  }
- .header-search__input{
+.header-search__input{
   outline: none;
-
  }
- .header-search__input:focus{
+.header-search__input:focus{
   border: 1px solid #59b7c2;
  }
 .header-search__button{
@@ -727,14 +728,15 @@ img {max-width: 100%;
   font-size: 12px;
   font-weight: 400;
 }
+.header-actions__item + .header-actions__item::before{
+  content:'|';
+  color: #e0e0e0;
+}
 .header-actions__link{
   display: block;
   padding: 15px;
   text-decoration: none;
   color: #777777;
-}
-.header-actions__separator{
-  color: #e0e0e0;
 }
 .header-actions__link:hover{
   background-color: #78c4cd;
