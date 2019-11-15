@@ -108,35 +108,15 @@ img {max-width: 100%;
   flex-wrap: wrap;
 }
 
-@media (max-width: 1599px) {
-  .fw-container {
-    padding-right: calc((100% - 1200px) / 2);
-    padding-left: calc((100% - 1200px) / 2);
-  }
-}
-
-@media (max-width: 1279px) {
-  .fw-container {
-    padding-right: calc((100% - 960px) / 2);
-    padding-left: calc((100% - 960px) / 2);
-  }
-
-  .medium-row,
-  .small-row {
-    width: calc(100% + 30px);
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
 
 @media (max-width: 1023px) {
   .fw-container {
-    padding-right: calc((100% - 720px) / 2);
-    padding-left: calc((100% - 720px) / 2);
+    padding-right: calc((100% - 800px) / 2);
+    padding-left: calc((100% - 800px) / 2);
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 840px) {
   .fw-container {
     padding-right: 20px;
     padding-left: 20px;
@@ -605,7 +585,9 @@ img {max-width: 100%;
     max-width: calc((100% / 12) * 12);
   }
 }
+
 /*header*/
+
 .fw-justify-content-between{
   display: flex;
   justify-content: space-between;
@@ -727,7 +709,9 @@ img {max-width: 100%;
 .cart__img{
   margin-right: 7px;
 }
+
 /*menu*/
+
 .nav{
   background-color: #f5f7f9;
 }
@@ -741,10 +725,10 @@ img {max-width: 100%;
 }
 .nav__item{
   font-family: 'BitterRegular';
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 20px;
   transition: background linear .2s;
 }
 .nav__item:hover{
@@ -754,25 +738,29 @@ img {max-width: 100%;
   color: #fff;
 }
 .nav__links{
+  display: block;
+  padding: 20px;
   text-decoration: none;
   color: #737474;
-  transition: color linear .2s, background-color linear 5s;
+  transition: color linear .2s, background-color linear .2s;
 }
 .nav__links:hover{
   background-color: #78c4cd;
   color: #fff;
-  text-decoration: none;
 }
 .nav__links__active{
+  display: block;
+  padding: 20px;
   color: #fff;
   text-decoration: none;
 }
 
 /*slider*/
+
 .slider{
   padding: 20px 0;
 }
-.slide{
+.slide__bg{
   background-image: url(../img/slide.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -802,7 +790,9 @@ h1{
   margin: 3px 0;
   padding: 8px;
 }
+
 /*banners*/
+
 .banner{
   display: flex;
   align-items: center;
