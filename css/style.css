@@ -759,6 +759,7 @@ img {max-width: 100%;
 .cart__link{
   text-decoration: none;
   padding: 15px;
+  color: #777777;
 }
 .cart__link:hover{
   background-color: #78c4cd;
