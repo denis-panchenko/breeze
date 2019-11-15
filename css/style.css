@@ -758,15 +758,16 @@ img {max-width: 100%;
   color: #737474;
   transition: color linear .2s, background-color linear 5s;
 }
-.nav__links__active{
-  color: #fff;
-  text-decoration: none;
-}
 .nav__links:hover{
   background-color: #78c4cd;
   color: #fff;
   text-decoration: none;
 }
+.nav__links__active{
+  color: #fff;
+  text-decoration: none;
+}
+
 /*slider*/
 .slider{
   padding: 20px 0;
