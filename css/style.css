@@ -655,6 +655,9 @@ img {max-width: 100%;
   background-color: #78c4cd;
   color: #fff;
 }
+.current:hover{
+  background-color: #78c4cd;
+}
 .lang__link{
   display: block;
   text-decoration: none;
@@ -723,7 +726,8 @@ img {max-width: 100%;
   margin: 0;
 }
 .header-actions__item{
-  display: inline;
+  display: flex;
+  align-items: center;
   font-family: 'SegoeUIRegular';
   font-size: 12px;
   font-weight: 400;
