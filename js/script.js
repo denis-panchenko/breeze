@@ -23,7 +23,7 @@ $(function () {
  	});
 })
 $(function () {
-	$('.container-pop-up').on('click', function(e) {
+	$('.container-pop-up .escape').on('click', function(e) {
 	  	e.preventDefault();
 	 	$('.container-pop-up').css('display', 'none');
  	});
