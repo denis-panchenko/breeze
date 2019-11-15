@@ -727,7 +727,7 @@ img {max-width: 100%;
   font-family: 'BitterRegular';
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   transition: background linear .2s;
 }
