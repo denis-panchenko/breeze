@@ -651,13 +651,6 @@ img {max-width: 100%;
   font-weight: 700;
   font-size: 11px;
 }
-.current{
-  background-color: #78c4cd;
-  color: #fff;
-}
-.current:hover{
-  background-color: #78c4cd;
-}
 .lang__link{
   display: block;
   text-decoration: none;
@@ -672,6 +665,13 @@ img {max-width: 100%;
 }
 .lang__link:hover, .currency__link:hover{
   background-color: #d5e4f1;
+}
+.current{
+  background-color: #78c4cd;
+  color: #fff;
+}
+.current:hover{
+  background-color: #78c4cd;
 }
 .header__bottomline{
   padding: 50px 0;
