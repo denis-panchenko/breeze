@@ -691,6 +691,7 @@ img {max-width: 100%;
  }
 .header-search__input:focus{
   border: 1px solid #59b7c2;
+  box-shadow: 0 0 3px rgba(120,196,205,0.7);
  }
 .header-search__button{
   background: none;
