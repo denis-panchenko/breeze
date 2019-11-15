@@ -673,6 +673,13 @@ img {max-width: 100%;
 .current:hover{
   background-color: #78c4cd;
 }
+.active{
+  background-color: #78c4cd;
+  color: #fff;
+}
+.active:hover{
+  background-color: #78c4cd;
+}
 .header__bottomline{
   padding: 50px 0;
   border-bottom: 1px solid #e0e0e0;
@@ -807,10 +814,11 @@ img {max-width: 100%;
   background-color: #78c4cd;
   color: #fff;
 }
-.nav__links__active{
+.nav__links-active{
   display: block;
   padding: 20px;
   color: #fff;
+  background-color: #78c4cd;
   text-decoration: none;
 }
 
