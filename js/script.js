@@ -21,8 +21,7 @@ $(function () {
 	  	e.preventDefault();
 	 	$('.container-pop-up').css('display', 'block');
  	});
-})
-$(function () {
+
 	$('.container-pop-up .escape').on('click', function(e) {
 	  	e.preventDefault();
 	 	$('.container-pop-up').css('display', 'none');
