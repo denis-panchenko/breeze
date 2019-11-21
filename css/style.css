@@ -7,7 +7,9 @@
 
 img {max-width: 100%;
 }
-
+body{
+  background-color: pink;
+}
 /*fonts*/
 @font-face {
   font-family: "BitterRegular";
@@ -969,7 +971,7 @@ img {max-width: 100%;
 .slide__product{
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 16%;
   left: 4%;
 }
 .slide__text{
@@ -1116,7 +1118,7 @@ h2{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px;
+  margin: 60px 0 20px 0;
 }
 .form-pop-up__text{
   width: 60%;

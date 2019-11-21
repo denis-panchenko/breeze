@@ -27,3 +27,9 @@ $(function () {
 	 	$('.container-pop-up').css('display', 'none');
  	});
 })
+
+$(document).ready(function(){
+  $('.slider').slick({
+   
+  });
+});
