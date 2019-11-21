@@ -168,6 +168,10 @@
     border: 5px solid #222222;
     background-color: #fff;
 }
+.slick-active li{
+    border: 5px solid #222222;
+    background-color: #fff;
+}
 .slick-dots li button
 {
     font-size: 0;
