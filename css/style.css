@@ -959,6 +959,9 @@ img {max-width: 100%;
   margin: auto;
   position: relative;
 }
+.slide{
+  position: relative;
+}
 .slide__bg{
   background-image: url(../img/slide-1.png);
   background-repeat: no-repeat;
