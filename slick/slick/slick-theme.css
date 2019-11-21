@@ -143,7 +143,7 @@
     border: 5px solid #222222;
     background-color: #fff;
 }
-.slick-dots li .slick-active{
+.slick-dots li.slick-active{
     border: 5px solid #222222;
     background-color: #fff;
 }
