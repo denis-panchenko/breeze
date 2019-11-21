@@ -7,10 +7,9 @@
 
 img {max-width: 100%;
 }
-body{
-  background-color: pink;
-}
+
 /*fonts*/
+
 @font-face {
   font-family: "BitterRegular";
   src: url("../fonts/BitterRegular/BitterRegular.eot");
@@ -998,48 +997,7 @@ h1{
   margin: 3px 0;
   padding: 8px;
 }
-.prev, .next{
-  cursor: pointer;
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  top: calc((100% - 42px)/2);
-  font-size: 16px;
-  text-align: center;
-  padding-top: 13px;
-  font-family: 'SegoeUILight';
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #515152;
-  transition: .3s linear;
-}
-.next{
-  right: 0;
-}
-.prev:hover, .next:hover{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-.dotes{
-  position: absolute;
-  z-index: 2;
-  bottom: 40px;
-  right: 20px;
-  display: flex;
-}
-.dot{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  background-color: #222222;
-  margin-left: 6px;
-  opacity: 0.6;
-  transition: 0.2s linear;
-}
-.dot:hover{
-  border: 5px solid #222222;
-  background-color: #fff;
-}
+
 /*banners*/
 
 .banner{
