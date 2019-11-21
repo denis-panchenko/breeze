@@ -47,7 +47,7 @@
 .slick-prev:hover,
 .slick-prev:focus
 {
-    color: #fff;
+    
     outline: none;
     background: rgba(0, 0, 0, 0.8);
     background-image: url(../../img/arrow-left-hover.png);
@@ -58,7 +58,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: #fff;
+   
     outline: none;
     background: rgba(0, 0, 0, 0.8);
     background-image: url(../../img/arrow-right-hover.png);
@@ -100,7 +100,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-[dir='rtl'] .slick-prev
+/*[dir='rtl'] .slick-prev
 {
     right: -25px;
     left: auto;
@@ -113,7 +113,7 @@
 {
     content: '→';
 }
-
+*/
 .slick-next
 {
     right: 0;
@@ -121,7 +121,7 @@
     background-repeat: no-repeat;
     background-position: center;   
 }
-[dir='rtl'] .slick-next
+/*[dir='rtl'] .slick-next
 {
     right: auto;
     left: -25px;
@@ -133,7 +133,7 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+}*/
 
 /* Dots */
 
@@ -142,10 +142,13 @@
     position: absolute;
     bottom: 40px;
     right: 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
     list-style: none;
 
     text-align: center;
@@ -157,9 +160,9 @@
     border-radius: 50%;
     border: 5px solid #fff;
     background-color: #222222;
-    margin-left: 6px;
     opacity: 0.6;
     transition: 0.3s linear;
+    margin: 3px;
 }
 .slick-dots li:hover{
     border: 5px solid #222222;
