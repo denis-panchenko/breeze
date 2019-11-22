@@ -978,7 +978,7 @@ img {max-width: 100%;
 .slide__text{
   position: absolute;
   z-index: 3;
-  top: 10%;
+  top: 3%;
   right: 15%;
 }
 h2{
