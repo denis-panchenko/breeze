@@ -1091,7 +1091,9 @@ h5::after{
   color: #999999;
   padding: 30px 0;
 }
-
+.footer-bg{
+  background-image: url(../img/footer-bg.png);
+}
 /*pop-up*/
 
 .container-pop-up{
