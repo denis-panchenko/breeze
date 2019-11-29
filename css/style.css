@@ -1071,7 +1071,7 @@ h3{
 h4{
   font-family: 'BitterRegular';
   font-size: 18px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 .about_us__text{
   font-family: 'SegoeUIRegular';
@@ -1085,10 +1085,11 @@ h4{
   color: #777777;
   line-height: 1.5;
 }
-.green-text{
+.green-text__link{
   display: block;
   font-family: 'SegoeUIRegular';
   color: #61b5bf;
+  text-decoration: none;
 }
 .newsletter__text{
   font-family: 'SegoeUIRegular';
