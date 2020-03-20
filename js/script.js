@@ -1,3 +1,5 @@
+// Popup
+
 $(function () {
 	$('.login').on('click', function(e) {
 	  	e.preventDefault();
@@ -8,6 +10,8 @@ $(function () {
 	  	e.preventDefault();
 	 	$('.container-pop-up').css('display', 'none');
    });
+
+// Переключатель язык/валюта
 
   var $currencyLink = $('.currency__link');
   var $langLink = $('.lang__link');
@@ -26,6 +30,8 @@ $(function () {
     oldElem.removeClass(currentClass);
     newElem.addClass(currentClass);
   }
+
+  // Слайдер
 
   $('.slider').slick({
     dots: true,
