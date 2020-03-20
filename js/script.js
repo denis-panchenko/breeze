@@ -1,21 +1,3 @@
-var $currencyLink = $('.currency__link');
-  var $langLink = $('.lang__link');
-
-  $currencyLink.on( 'click', function(e) {
-    e.preventDefault();
-    setActiveItem( $('.active'), $(this), 'active');
-  });
-
-  $langLink.on( 'click', function(e) {
-    e.preventDefault();
-    setActiveItem( $('.current'), $(this), 'current');
-  });
-
-  function setActiveItem(oldElem, newElem, currentClass) {
-    oldElem.removeClass(currentClass);
-    newElem.addClass(currentClass);
-  }
-
 $(function () {
 	$('.login').on('click', function(e) {
 	  	e.preventDefault();
@@ -25,10 +7,26 @@ $(function () {
 	$('.container-pop-up .escape').on('click', function(e) {
 	  	e.preventDefault();
 	 	$('.container-pop-up').css('display', 'none');
- 	});
-})
+   });
 
-$(document).ready(function(){
+  var $currencyLink = $('.currency__link');
+  var $langLink = $('.lang__link');
+
+  $currencyLink.on('click', function (e) {
+    e.preventDefault();
+    setActiveItem($('.active'), $(this), 'active');
+  });
+
+  $langLink.on('click', function (e) {
+    e.preventDefault();
+    setActiveItem($('.current'), $(this), 'current');
+  });
+
+  function setActiveItem(oldElem, newElem, currentClass) {
+    oldElem.removeClass(currentClass);
+    newElem.addClass(currentClass);
+  }
+
   $('.slider').slick({
     dots: true,
     slidesToShow: 1,
@@ -36,4 +34,5 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2500,
   });
-});
+
+})
